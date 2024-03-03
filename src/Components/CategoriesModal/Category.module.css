@@ -1,0 +1,12 @@
+.layer{
+    background-color: rgba(0, 0, 0, 0.494);
+    color: #fff;
+    opacity: 0;
+    transition: 1s opacity;
+    cursor: pointer;
+
+}
+.layer:hover{
+    opacity: 1;
+
+}

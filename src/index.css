@@ -1,0 +1,136 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap');
+:root
+{
+    --main-color:#0aad0a;
+    --light-color:#f0f3f2;
+    --shadow: rgba(145,158,171,.2) 0px 2px 4px -1px,rgba(145,158,171,.14) 0px 4px 5px 0px,rgba(145,158,171,.12) 0px 1px 10px 0px;
+    --font-family:'Encode Sans Expanded', sans-serif;
+    --rating-color:#ffc908;
+}
+
+body{
+    font-family: var(--font-family) !important;
+}
+.rating-color
+{
+    color: var(--rating-color);
+}
+.cursor-pointer
+{
+    cursor: pointer;
+}
+a , a:hover{
+    color: black;
+    text-decoration: none;
+}
+
+.product{
+    transition: 1s all;
+    border: 1px solid #fff;
+}
+.product:hover
+{
+    box-shadow: var(--shadow);
+    border: solid 1px var(--main-color);
+}
+.product .btn 
+{
+    transition: transform 1s , opacity 1s;
+    transform: translateY(100%);
+    opacity: 0;
+}
+.product:hover .btn 
+{
+    opacity: 1;
+    transform: translateY(0%);
+
+}
+.font-sm
+{
+    font-size: 14px;
+}
+.text-main
+{
+    color: var(--main-color);
+}
+.bg-main
+{
+    background-color: var(--main-color) !important;
+}
+.bg-main-light 
+{
+    background-color: var(--light-color) !important;
+}
+
+nav{
+    z-index: 999;
+}
+
+.nav-link{
+    transition: 1s color;
+}
+
+.nav-link:hover{
+    color: var(--main-color);
+}
+.navbar-nav .nav-link.active{
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+
+.nav-item span{
+    font-size: 10px;
+}
+
+.button:hover{
+    background:transparent !important;
+    border: 1px solid var(--main-color) !important;
+    color: var(--main-color) !important;
+}
+
+.button{
+    background:var(--main-color) !important;
+    border: 1px solid var(--main-color) !important;
+    color: #fff !important;
+}
+.button-outline{
+    background:transparent !important;
+    border: 1px solid var(--main-color) !important;
+    color: var(--main-color) !important;
+}
+
+.button-outline:hover{
+    background:var(--main-color) !important;
+    border: 1px solid var(--main-color) !important;
+    color: #fff !important;
+}
+.button-outline:hover i{
+    color: #fff;
+}
+
+
+.form-control:focus{
+    border-color: var(--main-color) !important;
+    outline: 0;
+    box-shadow: none !important;
+}
+.pay:hover{
+    color: var(--main-color);
+}
+.error-msg{
+    color: red;
+    font-size: 12px;
+    font-weight: 900;
+    text-align: right;
+}
+
+.wishlist{
+    transition: 1s color;
+    font-size: 22px;
+}
+.wishlist:hover{
+    color: red;
+
+}
